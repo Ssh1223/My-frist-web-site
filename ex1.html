@@ -5,13 +5,16 @@
     <title></title>
   </head>
   <body>
-    <input type="button" value="night" onclick="
+    <input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value === 'night'){
     document.querySelector('body').style.backgroundColor = 'black';
     document.querySelector('body').style.color = 'white';
-    ">
-    <input type="button" value="day" onclick="
+    document.querySelector('#night_day').value = 'day';
+  } else {
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('body').style.color = 'black';
+    document.querySelector('#night_day').value = 'night';
+  }
     ">
     <h1><a href="index.html">WEB</h1>
     <h1><a href="exindex.html">exWEB</h1>
@@ -19,6 +22,8 @@
     <li><a href="ex1.html">exHTML</a></li>
     <li><a href="ex2.html">exCSS</a></li>
     <li><a href="ex3.html">exJavaScript</a></li>
+    <li><a href="ex4.html">exboolean</a></li>
+    <li><a href="ex5.html">exif_else</a></li>
   </ol>
     <h1>JavaScript</h1>
     <script>

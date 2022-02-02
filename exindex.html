@@ -5,13 +5,16 @@
   <meta charset="utf-8">
 </head>
 <body>
-  <input type="button" value="night" onclick="
+  <input id="night_day" type="button" value="night" onclick="
+  if(document.querySelector('#night_day').value === 'night'){
   document.querySelector('body').style.backgroundColor = 'black';
   document.querySelector('body').style.color = 'white';
-  ">
-  <input type="button" value="day" onclick="
+  document.querySelector('#night_day').value = 'day';
+} else {
   document.querySelector('body').style.backgroundColor = 'white';
   document.querySelector('body').style.color = 'black';
+  document.querySelector('#night_day').value = 'night';
+}
   ">
   <h1><a href="index.html">WEB</h1>
     <h1><a href="exindex.html">exWEB</h1>
@@ -19,6 +22,8 @@
     <li><a href="ex1.html">exHTML</a></li>
     <li><a href="ex2.html">exCSS</a></li>
     <li><a href="ex3.html">exJavaScript</a></li>
+    <li><a href="ex4.html">exboolean</a></li>
+    <li><a href="ex5.html">exif_else</a></li>
   </ol>
   <h2>WEB2</h2>
   <p>웹 브라우저(영어: web browser) 또는 웹 탐색기(web探索機, 문화어: 열람기)는 웹 서버에서 이동하며(navigate) 쌍방향으로 통신하고 HTML 문서나 파일을 출력하는 그래픽 사용자 인터페이스 기반의 응용 소프트웨어이다. 웹 브라우저는 대표적인 HTTP 사용자 에이전트의 하나이기도 하다.

@@ -48,27 +48,19 @@
           <li><a href="ex7.html">Loop</a></li>
           <li><a href="ex8.html">Loop & Array</a></li>
         </ol>
-    <h1>Comparison operators & Boolean</h1>
-    <h2>===</h2>
-    <h3>1===1</h3>
+    <h1>Loop & Array</h1>
     <script>
-      document.write(1===1)
+      var coworkers = ['egoing', 'leezche', 'duru', 'taeho', 'sheis'];
     </script>
-
-    <h3>1===2</h3>
-    <script>
-      document.write(1===2)
-    </script>
-
-    <h3>1&lt1</h3>
-    <script>
-      document.write(1<1)
-    </script>
-
-    <h3>1&gt2</h3>
-    <script>
-      document.write(1>2)
-    </script>
-
+    <h2>CO workers</h2>
+    <ul>
+      <script>
+        var i = 0;
+        while(i < coworkers.length) {
+          document.write('<li>'+coworkers[i]+'</li>');
+          i = i + 1;
+        }
+      </script>
+    </ul>
   </body>
 </html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input id="night_day2" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      console.log(alist[i]);
+      alist[i].style.color = 'powderblue';
+      i = i + 1;
+                }
+
+
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      console.log(alist[i]);
+      alist[i].style.color = 'blue';
+      i = i + 1;
+                }
+
+  }
+    ">
+    <h1><a href="index.html">WEB</h1>
+      <h1><a href="exindex.html">exWEB</h1>
+        <ol>
+          <li><a href="ex1.html">exHTML</a></li>
+          <li><a href="ex2.html">exCSS</a></li>
+          <li><a href="ex3.html">exJavaScript</a></li>
+          <li><a href="ex4.html">exboolean</a></li>
+          <li><a href="ex5.html">Boolean</a></li>
+          <li><a href="ex6.html">array</a></li>
+          <li><a href="ex7.html">Loop</a></li>
+          <li><a href="ex8.html">Loop & Array</a></li>
+        </ol>
+    <h1>Loop</h1>
+    <h2>스압주의</h2>
+    <ul>
+    <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while (i < 9999) {
+        document.write('<li>2</li>');
+        document.write('<li>3</li>');
+        i = i + 1;
+      }
+      document.write('<li>4</li>');
+    </script>
+    </ul>
+  </body>
+</html>
